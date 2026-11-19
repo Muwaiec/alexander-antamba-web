@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<!-- deploy-check: 2026-11-19 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alexander Antamba · Fotógrafo y Filmmaker</title>
 <meta name="description" content="Alexander Antamba, fotógrafo y filmmaker en Otavalo, Ecuador. Contenido con intención para marcas, proyectos turísticos y emprendimientos.">
@@ -200,6 +199,88 @@
   @media (max-width:820px){.feat{border-radius:16px}.feat-info{left:16px;bottom:14px}.feat .work-tag{top:12px;left:12px}}
 
   @media (max-width:820px){.work{padding:5rem 0 4rem}.work-arrows{display:none}.work-card{flex-basis:70vw}}
+  /* TIENDA DE RECURSOS */
+  .shop{padding:7rem 0 6rem;border-top:1px solid var(--line);position:relative}
+  .shop-head{width:min(1120px,calc(100% - 32px));margin:0 auto 2.6rem;text-align:center}
+  .shop h2{font-weight:700;font-size:clamp(2.4rem,5vw,4rem);line-height:1.02;letter-spacing:-.03em;margin:.9rem 0 1rem}
+  .shop h2 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--light);text-shadow:0 0 40px rgba(0,99,142,.7)}
+  .shop-head p{color:var(--muted);max-width:560px;margin:0 auto;line-height:1.6}
+  .shop-filters{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+  .chip{border:1px solid rgba(191,216,227,.3);background:transparent;color:var(--muted);padding:.55rem 1.1rem;border-radius:999px;font:500 .88rem var(--sans);cursor:pointer;transition:.2s}
+  .chip:hover{color:var(--ink)}
+  .chip.on{background:var(--light);border-color:var(--light);color:#0a0a0a}
+  .shop-grid{width:min(1120px,calc(100% - 32px));margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .shop-grid.two{grid-template-columns:repeat(2,1fr);max-width:860px}
+  .prod{border-radius:22px;overflow:hidden;background:#1b1b1b;border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .3s,transform .3s}
+  .prod:hover{border-color:rgba(140,185,204,.45);transform:translateY(-4px)}
+  .prod.hide{display:none}
+  .prod-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(140deg,#000,#004a6b 50%,#00638e)}
+  .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ba .ba-before{clip-path:inset(0 calc(100% - var(--x)) 0 0)}
+  .ba-line{position:absolute;top:0;bottom:0;left:var(--x);width:2px;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.5);pointer-events:none}
+  .ba-line::after{content:"⟷";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:34px;height:34px;border-radius:50%;background:#fff;color:#0a0a0a;display:grid;place-items:center;font-size:14px}
+  .ba-range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+  .ba-lbl{position:absolute;top:12px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .65rem;border-radius:999px;background:rgba(10,10,10,.6);pointer-events:none}
+  .ba-lbl.l{left:12px}.ba-lbl.r{right:12px}
+  .sfx,.anim{display:grid;place-items:center}
+  .wave{position:absolute;left:8%;right:8%;top:30%;bottom:30%;display:flex;align-items:center;gap:4px}
+  .wave i{flex:1;background:rgba(191,216,227,.55);border-radius:3px}
+  .sfx-title{position:relative;z-index:2;display:flex;align-items:baseline;gap:.4rem;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+  .sfx-title b{font-size:3.4rem;font-weight:800;letter-spacing:-.04em}
+  .sfx-title em{font-family:var(--serif);font-style:italic;font-size:3rem;color:var(--light)}
+  .sfx .wave{opacity:.55}
+  .sfx-play{position:relative;z-index:2;width:60px;height:60px;border-radius:50%;border:0;background:#fff;color:#0a0a0a;display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+  .sfx-play svg{width:16px;margin-left:3px}
+  .sfx-lbl{position:absolute;bottom:12px;left:12px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .65rem;border-radius:999px;background:rgba(10,10,10,.55)}
+  .anim-demo{display:flex;flex-direction:column;gap:10px;width:60%}
+  .anim-demo span{height:14px;border-radius:7px;background:rgba(255,255,255,.85);transform-origin:left;animation:grow 2.4s ease-in-out infinite}
+  .anim-demo span:nth-child(2){width:75%;animation-delay:.25s;background:var(--light)}
+  .anim-demo span:nth-child(3){width:50%;animation-delay:.5s;background:rgba(140,185,204,.7)}
+  @keyframes grow{0%,100%{transform:scaleX(.08);opacity:.4}45%,70%{transform:scaleX(1);opacity:1}}
+  .prod-body{padding:1.3rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+  .prod-top{display:flex;justify-content:space-between;align-items:center}
+  .tag{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--azure-l);font-weight:600}
+  .price{font-weight:700;font-size:1.25rem}
+  .price s{font-weight:400;font-size:.9rem;color:var(--muted);margin-right:.3rem}
+  .badge-off{position:absolute;left:12px;bottom:12px;font-size:.72rem;font-weight:600;padding:.35rem .7rem;border-radius:999px;background:var(--light);color:#0a0a0a;pointer-events:none}
+  .prod h3{font-size:1.25rem;font-weight:600;letter-spacing:-.01em}
+  .prod p{color:var(--muted);font-size:.9rem;line-height:1.55;flex:1}
+  .prod-ctas{display:flex;gap:.5rem;margin-top:.4rem}
+  .badge-soon{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;pointer-events:none;font-weight:700;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:.6rem 1.1rem;border-radius:999px;background:rgba(10,10,10,.7);backdrop-filter:blur(8px);border:1px solid rgba(191,216,227,.4)}
+  .prod.soon .ba-line::after{display:none}
+  .soon-price{font-size:.85rem;font-weight:600;color:var(--light)}
+  .shop-note{width:min(1120px,calc(100% - 32px));margin:2.2rem auto 0;text-align:center;color:var(--muted);font-size:.85rem}
+  @media (max-width:980px){.shop-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:620px){.shop-grid,.shop-grid.two{grid-template-columns:1fr}.shop{padding:5rem 0 4rem}}
+  /* MODAL AVÍSAME */
+  .nmodal [hidden]{display:none!important}
+  .nmodal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:16px}
+  .nmodal.open{display:flex}
+  .nmodal-bg{position:absolute;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px)}
+  .nmodal-box{position:relative;width:min(460px,100%);padding:2.2rem 1.8rem 1.8rem;border-radius:24px;background:#141414;border:1px solid rgba(191,216,227,.2);box-shadow:0 40px 90px rgba(0,0,0,.6);text-align:center}
+  .nmodal-box h3{font-size:2rem;font-weight:700;letter-spacing:-.02em;margin:.6rem 0 .8rem}
+  .nmodal-box h3 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--light)}
+  .nmodal-sub{color:var(--muted);font-size:.95rem;line-height:1.55;margin-bottom:1.4rem}
+  .nmodal-x{position:absolute;top:12px;right:14px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.06);color:var(--ink);font-size:1.4rem;cursor:pointer}
+  .nfield{display:block;text-align:left;margin-bottom:.6rem}
+  .nfield span{display:block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem}
+  .nfield input{width:100%;padding:.95rem 1.1rem;border-radius:14px;border:1px solid rgba(191,216,227,.25);background:#0a0a0a;color:var(--ink);font:500 1rem var(--sans);outline:none}
+  .nfield input:focus{border-color:var(--azure-l)}
+  .ntabs{display:flex;gap:4px;padding:4px;border-radius:999px;background:#0a0a0a;border:1px solid var(--line);margin-bottom:1rem}
+  .ntab{flex:1;border:0;background:transparent;color:var(--muted);padding:.6rem;border-radius:999px;font:600 .9rem var(--sans);cursor:pointer}
+  .ntab.on{background:var(--light);color:#0a0a0a}
+  .nphone{display:flex;gap:.5rem}
+  .nphone select{flex:0 0 46%;min-width:0;padding:.95rem .7rem;border-radius:14px;border:1px solid rgba(191,216,227,.25);background:#0a0a0a;color:var(--ink);font:500 .92rem var(--sans);outline:none}
+  .nphone input{flex:1;min-width:0;padding:.95rem 1rem;border-radius:14px;border:1px solid rgba(191,216,227,.25);background:#0a0a0a;color:var(--ink);font:500 1rem var(--sans);outline:none}
+  .nphone select:focus,.nphone input:focus{border-color:var(--azure-l)}
+  .nmodal-box.done .ntabs{display:none}
+  .nerr{min-height:1.2rem;color:#ff8a8a;font-size:.85rem;text-align:left;margin-bottom:.6rem}
+  .nmodal-box .pill{width:100%;justify-content:center}
+  .nmodal-note{color:var(--muted);font-size:.78rem;margin-top:1rem}
+  .nok{display:none;flex-direction:column;gap:.3rem;padding:1.2rem;border-radius:16px;background:rgba(0,99,142,.25);margin-top:1rem}
+  .nok b{font-size:1.2rem}.nok span{color:var(--light)}
+  .nmodal-box.done .nfield,.nmodal-box.done .nerr,.nmodal-box.done #notifyBtn,.nmodal-box.done .nmodal-note{display:none}
+  .nmodal-box.done .nok{display:flex}
   /* CONTACTO */
   .contact{position:relative;padding:9rem 0 7rem;text-align:center;overflow:hidden;border-top:1px solid var(--line)}
   .contact-glow{position:absolute;left:50%;bottom:-30%;transform:translateX(-50%);width:110%;height:90%;
@@ -258,6 +339,7 @@
   <div class="links" id="links">
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#trabajos">Trabajos</a>
+    <a href="#recursos">Recursos</a>
     <a href="#contacto">Contacto</a>
   </div>
   <a href="#contacto" class="pill primary sm">Agenda una llamada</a>
@@ -523,6 +605,69 @@
 </section>
 
 
+<section class="shop" id="recursos">
+  <div class="shop-head">
+    <div class="kicker">Recursos para creadores</div>
+    <h2>Edita como yo, <em>en minutos</em></h2>
+    <p>Los mismos presets, sonidos y colores que uso en mis producciones. Descárgalos al instante y úsalos en tus proyectos.</p>
+    <div class="shop-filters" role="tablist">
+      <button class="chip on" data-f="all">Todos</button>
+      <button class="chip" data-f="presets">Presets</button>
+      <button class="chip" data-f="sonido">Efectos de sonido</button>
+      <button class="chip" data-f="luts">LUTs</button>
+    </div>
+  </div>
+  <div class="shop-grid">
+    <article class="prod" data-cat="presets">
+      <div class="prod-media ba" style="--x:50%">
+        <img src="img/recursos/presets-despues.jpg" alt="Foto editada con el preset">
+        <img class="ba-before" src="img/recursos/presets-antes.jpg" alt="Foto original sin editar">
+        <span class="ba-lbl l">Antes</span><span class="ba-lbl r">Después</span>
+        <div class="ba-line"></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+        <span class="badge-off">-20% con código NUEVO</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-top"><span class="tag">Presets de fotografía</span><span class="price"><s>$19</s> $15.20</span></div>
+        <h3>Pack de +300 Presets</h3>
+        <p>Los presets que uso en mis propias fotos: un look profesional en un clic y una forma de aprender a editar, viendo qué ajustes cambia cada uno. Archivos .xmp para Lightroom Classic, Lightroom (escritorio) y Camera Raw. Funcionan con RAW y JPG.</p>
+        <div class="prod-ctas"><a class="pill primary sm" href="https://alexanderantamba.gumroad.com/l/gwokxh" target="_blank" rel="noopener">Comprar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pill ghost sm" href="https://wa.me/593989533689?text=Hola%20Alexander%2C%20quiero%20comprar%20el%20Pack%20de%20%2B300%20Presets" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+    </article>
+    <article class="prod" data-cat="sonido">
+      <div class="prod-media sfx">
+        <div class="wave"><i style="height:30%"></i><i style="height:55%"></i><i style="height:80%"></i><i style="height:45%"></i><i style="height:90%"></i><i style="height:60%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:95%"></i><i style="height:50%"></i><i style="height:40%"></i><i style="height:75%"></i><i style="height:60%"></i><i style="height:85%"></i><i style="height:30%"></i><i style="height:65%"></i><i style="height:45%"></i><i style="height:90%"></i><i style="height:55%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:50%"></i><i style="height:80%"></i><i style="height:40%"></i></div>
+        <div class="sfx-title"><b>+1000</b><em>SFX</em></div>
+        <span class="sfx-lbl">23 categorías · WAV + MP3</span>
+        <span class="badge-off" style="left:auto;right:12px;top:12px;bottom:auto">-20% con código SFX</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-top"><span class="tag">Efectos de sonido</span><span class="price"><s>$15</s> $12</span></div>
+        <h3>SFX Pack Completo</h3>
+        <p>Más de 1000 efectos de sonido que uso en mis producciones: transiciones, impactos, booms, risers, glitch, ambientes, foley y más. Para DaVinci, Premiere, Final Cut y CapCut. Actualizaciones gratis de por vida.</p>
+        <div class="prod-ctas"><a class="pill primary sm" href="https://alexanderantamba.gumroad.com/l/cmfhbc" target="_blank" rel="noopener">Comprar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pill ghost sm" href="https://wa.me/593989533689?text=Hola%20Alexander%2C%20quiero%20comprar%20el%20SFX%20Pack%20Completo" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+    </article>
+    <article class="prod soon" data-cat="luts">
+      <div class="prod-media ba" style="--x:50%">
+        <img src="img/recursos/luts-despues.jpg" alt="Video con color grading">
+        <img class="ba-before" src="img/recursos/luts-antes.jpg" alt="Video sin color grading">
+        <span class="ba-lbl l">Log</span><span class="ba-lbl r">Graded</span>
+        <div class="ba-line"></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+        <span class="badge-soon">Próximamente</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-top"><span class="tag">LUTs · Color grading</span><span class="price soon-price">Muy pronto</span></div>
+        <h3>Pack de LUTs para video</h3>
+        <p>El color de mis producciones, listo para tus videos. LUTs cinematográficos para DaVinci Resolve, Premiere, Final Cut y CapCut.</p>
+        <div class="prod-ctas"><button class="pill primary sm notify-open" data-product="Pack de LUTs para video">Avísame cuando salga</button></div>
+      </div>
+    </article>
+  </div>
+  <p class="shop-note">Pago seguro con tarjeta o PayPal · Descarga inmediata · ¿Estás en Ecuador? También puedes pagar por transferencia escribiéndome por WhatsApp.</p>
+</section>
+
 <section class="contact" id="contacto">
   <div class="contact-glow"></div>
   <div class="contact-in">
@@ -542,6 +687,73 @@
   </div>
 </section>
 
+
+<div class="nmodal" id="notify" aria-hidden="true">
+  <div class="nmodal-bg" data-close></div>
+  <form class="nmodal-box" id="notifyForm" novalidate>
+    <button type="button" class="nmodal-x" data-close aria-label="Cerrar">×</button>
+    <div class="kicker">Próximamente</div>
+    <h3>Avísame cuando <em>salga</em></h3>
+    <p class="nmodal-sub">Déjame tu correo o tu WhatsApp y serás de los primeros en enterarte cuando salga.</p>
+    <input type="hidden" name="producto" id="notifyProduct" value="">
+    <div class="ntabs" role="tablist">
+      <button type="button" class="ntab on" data-mode="mail">Correo</button>
+      <button type="button" class="ntab" data-mode="wa">WhatsApp</button>
+    </div>
+    <input type="hidden" name="contacto" id="notifyContact" value="">
+    <input type="hidden" name="tipo" id="notifyType" value="Correo">
+    <label class="nfield" id="fMail"><span>Correo electrónico</span>
+      <input id="notifyMail" type="email" inputmode="email" autocomplete="email" placeholder="tucorreo@gmail.com">
+    </label>
+    <div class="nfield" id="fWa" hidden><span>Número de WhatsApp</span>
+      <div class="nphone">
+        <select id="notifyCode" aria-label="Código de país">
+          <option value="+593" selected>🇪🇨 Ecuador (+593)</option>
+          <option value="+57">🇨🇴 Colombia (+57)</option>
+          <option value="+51">🇵🇪 Perú (+51)</option>
+          <option value="+52">🇲🇽 México (+52)</option>
+          <option value="+54">🇦🇷 Argentina (+54)</option>
+          <option value="+56">🇨🇱 Chile (+56)</option>
+          <option value="+591">🇧🇴 Bolivia (+591)</option>
+          <option value="+58">🇻🇪 Venezuela (+58)</option>
+          <option value="+598">🇺🇾 Uruguay (+598)</option>
+          <option value="+595">🇵🇾 Paraguay (+595)</option>
+          <option value="+55">🇧🇷 Brasil (+55)</option>
+          <option value="+507">🇵🇦 Panamá (+507)</option>
+          <option value="+506">🇨🇷 Costa Rica (+506)</option>
+          <option value="+502">🇬🇹 Guatemala (+502)</option>
+          <option value="+504">🇭🇳 Honduras (+504)</option>
+          <option value="+503">🇸🇻 El Salvador (+503)</option>
+          <option value="+505">🇳🇮 Nicaragua (+505)</option>
+          <option value="+1">🇩🇴 Rep. Dominicana (+1)</option>
+          <option value="+1">🇵🇷 Puerto Rico (+1)</option>
+          <option value="+53">🇨🇺 Cuba (+53)</option>
+          <option value="+1">🇺🇸 Estados Unidos (+1)</option>
+          <option value="+1">🇨🇦 Canadá (+1)</option>
+          <option value="+34">🇪🇸 España (+34)</option>
+          <option value="+39">🇮🇹 Italia (+39)</option>
+          <option value="+33">🇫🇷 Francia (+33)</option>
+          <option value="+49">🇩🇪 Alemania (+49)</option>
+          <option value="+44">🇬🇧 Reino Unido (+44)</option>
+          <option value="+351">🇵🇹 Portugal (+351)</option>
+          <option value="+31">🇳🇱 Países Bajos (+31)</option>
+          <option value="+41">🇨🇭 Suiza (+41)</option>
+          <option value="+32">🇧🇪 Bélgica (+32)</option>
+          <option value="+61">🇦🇺 Australia (+61)</option>
+          <option value="+81">🇯🇵 Japón (+81)</option>
+          <option value="+86">🇨🇳 China (+86)</option>
+          <option value="+91">🇮🇳 India (+91)</option>
+        </select>
+        <input id="notifyPhone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="99 999 9999">
+      </div>
+    </div>
+    <div class="nerr" id="notifyErr"></div>
+    <button class="pill primary" type="submit" id="notifyBtn">Avísame</button>
+    <p class="nmodal-note">Solo te escribiré para avisarte del lanzamiento. Nada de spam.</p>
+    <div class="nok" id="notifyOk"><b>¡Listo!</b><span>Te aviso apenas salga.</span></div>
+  </form>
+</div>
+
 <footer class="foot">
   <div class="foot-in">
     <div class="foot-brand">
@@ -549,7 +761,7 @@
       <p>Fotógrafo y filmmaker. Contenido con valor para marcas que quieren verse profesionales.</p>
     </div>
     <nav class="foot-links">
-      <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#trabajos">Trabajos</a><a href="#contacto">Contacto</a>
+      <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#trabajos">Trabajos</a><a href="#recursos">Recursos</a><a href="#contacto">Contacto</a>
     </nav>
     <div class="foot-social">
       <a href="mailto:davidantamba888@gmail.com" aria-label="Correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></a>
@@ -586,6 +798,35 @@
   if(cT){const cs=()=>{const c=cT.querySelector('.hcard');return c?c.getBoundingClientRect().width+18:500};
     document.getElementById('cPrev').addEventListener('click',()=>cT.scrollBy({left:-cs()}));
     document.getElementById('cNext').addEventListener('click',()=>cT.scrollBy({left:cs()}));}
+  document.querySelectorAll('.ba').forEach(b=>{const r=b.querySelector('.ba-range');r.addEventListener('input',()=>b.style.setProperty('--x',r.value+'%'))});
+  document.querySelectorAll('.shop-filters .chip').forEach(c=>c.addEventListener('click',()=>{
+    document.querySelectorAll('.shop-filters .chip').forEach(x=>x.classList.toggle('on',x===c));
+    document.querySelectorAll('.prod').forEach(p=>p.classList.toggle('hide',c.dataset.f!=='all'&&p.dataset.cat!==c.dataset.f));
+  }));
+  // Formulario "Avísame": URL de la app web de Google Apps Script (guarda en Google Sheets)
+  const NOTIFY_ENDPOINT='https://script.google.com/macros/s/AKfycbxpQoV5sTzfH0BZwGScErhF97kgKmvlfWfd7iP_1fz-jVY3XZTP--mWBAzrXfel60OD/exec';
+  const nm=document.getElementById('notify'), nf=document.getElementById('notifyForm'), ne=document.getElementById('notifyErr');
+  const nMail=document.getElementById('notifyMail'), nPhone=document.getElementById('notifyPhone'), nCode=document.getElementById('notifyCode');
+  let nMode='mail';
+  const setMode=m=>{nMode=m;document.querySelectorAll('.ntab').forEach(t=>t.classList.toggle('on',t.dataset.mode===m));
+    document.getElementById('fMail').hidden=m!=='mail';document.getElementById('fWa').hidden=m!=='wa';ne.textContent='';
+    setTimeout(()=>(m==='mail'?nMail:nPhone).focus(),30)};
+  document.querySelectorAll('.ntab').forEach(t=>t.addEventListener('click',()=>setMode(t.dataset.mode)));
+  const openN=p=>{document.getElementById('notifyProduct').value=p;nf.classList.remove('done');nMail.value='';nPhone.value='';nm.classList.add('open');setMode('mail')};
+  const closeN=()=>nm.classList.remove('open');
+  document.querySelectorAll('.notify-open').forEach(b=>b.addEventListener('click',()=>openN(b.dataset.product)));
+  nm.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',closeN));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeN()});
+  nf.addEventListener('submit',async e=>{
+    e.preventDefault(); let contact;
+    if(nMode==='mail'){const v=nMail.value.trim(); if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){ne.textContent='Escribe un correo válido.';return} contact=v;}
+    else{const d=nPhone.value.replace(/\D/g,'').replace(/^0+/,''); if(d.length<6||d.length>13){ne.textContent='Escribe tu número de WhatsApp sin el código de país.';return} contact=nCode.value+' '+d;}
+    document.getElementById('notifyContact').value=contact; document.getElementById('notifyType').value=nMode==='mail'?'Correo':'WhatsApp';
+    const btn=document.getElementById('notifyBtn'); btn.disabled=true; btn.textContent='Enviando…';
+    try{ if(NOTIFY_ENDPOINT){await fetch(NOTIFY_ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(nf))})} nf.classList.add('done'); }
+    catch(err){ne.textContent='No se pudo enviar. Intenta de nuevo o escríbeme por WhatsApp.'}
+    btn.disabled=false; btn.textContent='Avísame';
+  });
 </script>
 </body>
 </html>
